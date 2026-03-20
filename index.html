@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sistemas Operativos — Universidad Del Golfo de México UGM Campus Acayucan</title>
+  <meta name="description" content="Explicación sobre qué es un sistema operativo y los kernels.">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header header-spaced">
+    <div class="container">
+      <h1 class="logo">SO & Kernels</h1>
+      <button id="menuToggle" class="menu-toggle" aria-label="Abrir menú">☰</button>
+      <nav id="mainNav" class="nav">
+        <a href="#inicio">Inicio</a>
+        <a href="#que-es">Introducción a los sistemas operativos</a>
+        <a href="#kernel">Kernel</a>
+        <a href="#tipos">Tipos de Kernels</a>
+        <a href="#recursos">Recursos</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero mt-4">
+      <div class="container hero-grid">
+        <div class="hero-text card hero-text-box">
+          <h2>¿Qué es un Sistema Operativo?</h2>
+          <p>Un sistema operativo (SO) es el software encargado de que los móviles, smart TVs y demás dispositivos electrónicos funcionen correctamente. Es el intermediario entre los usuarios y el hardware (pantalla, teclado, ratón, etc.). Permite interactuar con aplicaciones por línea de comandos (ej. en Linux) o mediante interfaces gráficas, y gestiona el almacenamiento y la memoria del dispositivo.</p>
+          <a class="btn" href="#que-es">Aprender más</a>
+        </div>
+        <div class="hero-image">
+          <img class="img-responsive rounded shadow" src="https://images.unsplash.com/photo-1531482615713-2afd69097998?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=4a8e6befcfe8c83ea8e2f9b9c8eb7029" alt="Computación" />
+        </div>
+      </div>
+    </section>
+
+    <section id="que-es" class="container section">
+      <h3>¿Qué es un Sistema Operativo?</h3>
+      <p>El sistema operativo realiza tareas como: gestión de procesos, gestión de memoria, control de dispositivos, gestión de archivos y seguridad. Ejemplos: Linux, Windows, macOS, Android.</p>
+      <ul class="features">
+        <li class="card"> <strong>Gestión de procesos:</strong> crea, programa y finaliza procesos. </li>
+        <li class="card"> <strong>Gestión de memoria:</strong> asigna memoria y maneja intercambio (swap). </li>
+        <li class="card"> <strong>Gestión de archivos:</strong> sistemas de archivos y permisos. </li>
+        <li class="card"> <strong>Control de dispositivos:</strong> drivers y comunicación I/O. </li>
+      </ul>
+    </section>
+
+    <section id="tipos" class="container section">
+      <h3>Tipos de sistemas operativos</h3>
+      <p>Dependiendo del dispositivo y su funcionalidad, distinguimos varios tipos: sistemas operativos de escritorio, móviles, servidores y embebidos.</p>
+      <div class="cards mt-3">
+        <article class="card">
+          <h4>Sistemas operativos de escritorio</h4>
+          <p>Desarrollados para portátiles y ordenadores de escritorio. Ejemplos: Windows, macOS, Linux.</p>
+        </article>
+        <article class="card">
+          <h4>Sistemas operativos móviles</h4>
+          <p>Tabletas y teléfonos usan Android, iOS, y otros sistemas móviles.</p>
+        </article>
+        <article class="card">
+          <h4>Sistemas operativos de servidor</h4>
+          <p>Optimizados para uso remoto y manejo de múltiples usuarios simultáneos.</p>
+        </article>
+        <article class="card">
+          <h4>Sistemas embebidos</h4>
+          <p>Programados para funciones concretas: routers, smart TVs, electrodomésticos.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="funciones" class="container section">
+      <h4>¿Cuáles son las funciones de un sistema operativo?</h4>
+      <p>Entre las principales funciones de un sistema operativo destacan la gestión de recursos, control del rendimiento y realización de copias de seguridad. A continuación un listado más completo:</p>
+      <ul class="features mt-2">
+        <li class="card"><strong>Asignar recursos:</strong> Gestiona CPU, memoria y dispositivos.</li>
+        <li class="card"><strong>Optimizar la memoria:</strong> Administración eficiente del uso de memoria.</li>
+        <li class="card"><strong>Ejecutar procesos:</strong> Iniciar, planificar y detener procesos.</li>
+        <li class="card"><strong>Controlar recursos:</strong> Gestiona tiempos de ejecución y acceso a hardware.</li>
+        <li class="card"><strong>Garantizar la seguridad:</strong> Cifrado, permisos y políticas de acceso.</li>
+        <li class="card"><strong>Gestionar hardware:</strong> Comunicación con impresoras, ratón, teclado mediante drivers.</li>
+        <li class="card"><strong>Administrar conexiones de red:</strong> Protocolos y compartición de recursos.</li>
+        <li class="card"><strong>Organizar archivos:</strong> Crear, organizar y eliminar archivos y directorios.</li>
+        <li class="card"><strong>Copias de seguridad:</strong> Crear y recuperar respaldos.</li>
+        <li class="card"><strong>Llamadas al sistema:</strong> Interfaz para que las aplicaciones accedan a recursos del sistema.</li>
+        <li class="card"><strong>Máquinas virtuales:</strong> Permite ejecutar otros SOs dentro de un equipo mediante virtualización.</li>
+      </ul>
+    </section>
+
+    <section id="kernel" class="container section">
+      <h3>¿Qué es el Kernel?</h3>
+      <p>El kernel es el componente central del sistema operativo. Controla el acceso al hardware, gestiona procesos y memoria, y provee primitivas para la comunicación entre procesos.</p>
+      <div class="content-grid mt-3">
+        <div class="card">
+          <h4>Funciones clave del kernel</h4>
+          <ol>
+            <li>Planificación de CPU y multitarea.</li>
+            <li>Gestión de memoria (MMU, paginación).</li>
+            <li>Abstracción de dispositivos (drivers).</li>
+            <li>Sistemas de archivos y llamadas al sistema (syscalls).</li>
+          </ol>
+        </div>
+        <div class="img-card card">
+          <img class="img-responsive rounded shadow" src="https://images.unsplash.com/photo-1581093458797-ffb1e8c5d5e8?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=951f9a3b6a1d7b5c3cf1d8e3a789a1d4" alt="Diagrama conceptual del kernel" />
+          <p class="caption text-muted">Diagrama conceptual del kernel (ilustrativo).</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="tipos-kernel" class="container section">
+      <h3>Tipos de kernels</h3>
+      <div class="cards mt-3">
+        <article class="card">
+          <h4>Kernel Monolítico</h4>
+          <p>Toda la funcionalidad del kernel se ejecuta en modo kernel. Ejemplo: Linux.</p>
+        </article>
+        <article class="card">
+          <h4>Microkernel</h4>
+          <p>Minimiza el código en modo kernel, moviendo servicios a espacio de usuario. Ejemplos: Minix, QNX.</p>
+        </article>
+        <article class="card">
+          <h4>Híbrido</h4>
+          <p>Combina ideas de ambos enfoques. Ejemplos: algunos diseños de Windows y macOS.</p>
+          <ul>
+            <li>Microsoft Windows NT</li>
+            <li>XNU (macOS)</li>
+            <li>DragonFlyBSD</li>
+            <li>ReactOS</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="recursos" class="container section">
+      <h3>Recursos y Bibliografía</h3>
+      <ul class="mt-2">
+        <li><a href="https://www.os-book.com/" target="_blank" rel="noopener">Operating Systems: Three Easy Pieces</a></li>
+        <li><a href="https://www.kernel.org/" target="_blank" rel="noopener">Kernel.org</a></li>
+        <li><a href="https://www.freeos.com/" target="_blank" rel="noopener">Material académico y papers</a></li>
+      </ul>
+    </section>
+
+    <section id="contacto" class="container section">
+      <h3>Contacto</h3>
+      <p>Si eres estudiante o profesor y deseas más recursos, envía un mensaje.</p>
+      <form id="contactForm" class="contact-form card">
+        <label>
+          Nombre
+          <input type="text" name="name" required />
+        </label>
+        <label>
+          Email
+          <input type="email" name="email" required />
+        </label>
+        <label>
+          Mensaje
+          <textarea name="message" rows="5" required></textarea>
+        </label>
+        <button type="submit" class="btn">Enviar</button>
+        <p id="formStatus" class="muted mt-2"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Universidad Del Golfo de México — UGM Campus Acayucan</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

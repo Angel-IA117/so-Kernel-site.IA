@@ -3,7 +3,7 @@
 Autor: Angel IA
 
 Descripción
-Este proyecto es una página web informativa pensada para uso universitario que explica qué es un sistema operativo y los kernels. Incluye frontend (HTML/CSS/JS) y un backend simple en Node.js/Express para recibir mensajes del formulario de contacto.
+Este proyecto es una página web informativa pensada para uso universitario que explica qué es un sistema operativo y los kernels.
 
 Estructura
 - public/
